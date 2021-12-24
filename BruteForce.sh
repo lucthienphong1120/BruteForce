@@ -13,8 +13,6 @@ Fiuscha="\033[0;35m"
 blue="\033[1;34m"
 nc="\e[0m"
 
-       echo -e "$red by samsesh.$nc"
-
 #Installation
 sleep 1
 echo -e "Checking Installation $nc"
@@ -24,11 +22,13 @@ sleep 1
 clear
 #Startup
 echo -e "$green"
-echo "		.▄▄ ·        ▄▄· ▪   ▄▄▄· ▄▄▌      ▄▄▄▄·       ▐▄• ▄ "
-echo "		▐█ ▀. ▪     ▐█ ▌▪██ ▐█ ▀█ ██•      ▐█ ▀█▪▪      █▌█▌▪"
-echo "		▄▀▀▀█▄ ▄█▀▄ ██ ▄▄▐█·▄█▀▀█ ██▪      ▐█▀▀█▄ ▄█▀▄  ·██· "
-echo "		▐█▄▪▐█▐█▌.▐▌▐███▌▐█▌▐█ ▪▐▌▐█▌▐▌    ██▄▪▐█▐█▌.▐▌▪▐█·█▌"
-echo -e "		 ▀▀▀▀  ▀█▄▀▪·▀▀▀ ▀▀▀ ▀  ▀ .▀▀▀     ·▀▀▀▀  ▀█▄▀▪•▀▀ ▀▀$nc $blue v2.beta$nc"
+echo "__________                __           ___________                         "
+echo "\______   \_______ __ ___/  |_  ____   \_   _____/__________   ____  ____  "
+echo " |    |  _/\_  __ \  |  \   __\/ __ \   |    __)/  _ \_  __ \_/ ___\/ __ \ "
+echo " |    |   \ |  | \/  |  /|  | \  ___/   |     \(  <_> )  | \/\  \__\  ___/ "
+echo " |______  / |__|  |____/ |__|  \___  >  \___  / \____/|__|    \___  >___  >"
+echo "        \/                         \/       \/                    \/    \/ "
+echo -e "		                                                     $nc $blue LTP$nc"
 #echo -e "	[+]              $red Coded By sam.sesh$nc         		   [+]"
 #echo -e "	[+] 		 $red samsesh.net $nc 		   [+]"
 #echo -e "	[+] 		 $red Greetz To All Pentesters$nc          		   [+]"
@@ -41,7 +41,7 @@ echo -e "		$Cyan 2 : Brute Force Gmail Account$nc"
 echo -e "		$Cyan 3 : Brute Force Instagram Account 1$nc"
 echo -e "		$Cyan 4 : Brute Force Twitter Account$nc"
 echo -e "		$Cyan 5 : Brute Force Instagram Account 2 $nc"
-echo -e "		$Cyan 99: Exit$nc"
+echo -e "		$Cyan 0: Exit$nc"
 read -p "Choice >  " ch
 if [ $ch = 1 ]; then
 echo -e "			$Cyan Facebook Brute Force$nc"
@@ -155,22 +155,16 @@ echo -e "               [+]$yellow Brute Force Complete $nc[$green✓$nc] $nc[+]
 sv tor stop
 echo -e "		[+]$red Service Tor Stopped$nc [+]"
 echo -e "$red"
-read -p "Wanna Back To Main Menu [ Y / n ] : " check5
+read -p "Wanna Back To Main Menu [ y / n ] : " check5
 echo -e "$nc"
 if [ $check5 = "Y" ]; then
-cd .. && bash SocialBox.sh
+cd .. && bash BruteForce.sh
 elif [ $check5 = "y" ]; then
-cd .. && bash SocialBox.sh
-elif [ $check5 = "Yes" ]; then
-cd .. && bash SocialBox.sh
-elif [ $check5 = "yes" ]; then
-cd .. && bash SocialBox.sh
-elif [ $check5 = "YES" ]; then
-cd .. && bash SocialBox.sh
+cd .. && bash BruteForce.sh
 else
 exit 1
 fi
-elif [ $ch == 99 ]; then
+elif [ $ch == 0 ]; then
 echo -e "$red Program Exit ...$nc"
 sleep 0.25
 exit 1
