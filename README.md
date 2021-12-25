@@ -17,4 +17,4 @@ chmod +775 install.sh
 
 ## Screenshots :
 
-![Screenshots](Screenshots/sb.png)
+![Screenshots](Screenshots/demo.png)
