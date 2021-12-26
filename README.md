@@ -1,4 +1,6 @@
 # Brute Force Attack
+A powerful password Brute Force password cracker for pentesting.
+
 
 ## Install
 
